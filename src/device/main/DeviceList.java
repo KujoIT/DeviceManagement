@@ -427,7 +427,7 @@ public class DeviceList {
 						}else {
 							System.out.println("Delete fail!");
 						}
-						conn.close();
+//						conn.close();
 						break;
 					}
 				}else if(choose == 2) {
@@ -483,7 +483,6 @@ public class DeviceList {
 				 resultFromDB.add(new PC(id, namee, ram, cpu, hdd));
 			 }		 
 		 }
-		 conn.close();
 		 
 		resultFind.addAll(resultFromDB);
 		resultFind.sort(Comparator.comparing(Computer::getName)); //Sap xep danh sach theo name (ORDER BY) default la ASC
